@@ -1,0 +1,12 @@
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ModuleTech.Core.Networking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ModuleTech.Core.Networking.AssemblyInfoInputs.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ModuleTech.Core.Networking.AssemblyInfo.cs
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ModuleTech.Core.Networking.csproj.CoreCompileInputs.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\bin\Debug\net9.0\ModuleTech.Core.Networking.deps.json
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\bin\Debug\net9.0\ModuleTech.Core.Networking.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\bin\Debug\net9.0\ModuleTech.Core.Networking.pdb
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ModuleTech.Core.Networking.csproj.AssemblyReference.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ModuleTech.Core.Networking.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\refint\ModuleTech.Core.Networking.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ModuleTech.Core.Networking.pdb
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Networking\obj\Debug\net9.0\ref\ModuleTech.Core.Networking.dll

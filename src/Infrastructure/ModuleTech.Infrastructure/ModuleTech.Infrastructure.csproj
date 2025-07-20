@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\ModuleTech.Application\ModuleTech.Application.csproj" />
+    <ProjectReference Include="..\..\Core\ModuleTech.Core.Caching\ModuleTech.Core.Caching.csproj" />
+    <ProjectReference Include="..\..\Core\ModuleTech.Core.ExceptionHandling\ModuleTech.Core.ExceptionHandling.csproj" />
+    <ProjectReference Include="..\..\Core\ModuleTech.Core.Networking\ModuleTech.Core.Networking.csproj" />
+    <ProjectReference Include="..\..\Core\ModuleTech.Domain\ModuleTech.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

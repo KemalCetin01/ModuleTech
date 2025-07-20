@@ -1,0 +1,12 @@
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ModuleTech.Core.ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ModuleTech.Core.ExceptionHandling.AssemblyInfoInputs.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ModuleTech.Core.ExceptionHandling.AssemblyInfo.cs
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ModuleTech.Core.ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\bin\Debug\net9.0\ModuleTech.Core.ExceptionHandling.deps.json
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\bin\Debug\net9.0\ModuleTech.Core.ExceptionHandling.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\bin\Debug\net9.0\ModuleTech.Core.ExceptionHandling.pdb
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ModuleTech.Core.ExceptionHandling.csproj.AssemblyReference.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ModuleTech.Core.ExceptionHandling.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\refint\ModuleTech.Core.ExceptionHandling.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ModuleTech.Core.ExceptionHandling.pdb
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.ExceptionHandling\obj\Debug\net9.0\ref\ModuleTech.Core.ExceptionHandling.dll

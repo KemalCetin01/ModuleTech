@@ -1,0 +1,12 @@
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ModuleTech.Core.Logging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ModuleTech.Core.Logging.AssemblyInfoInputs.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ModuleTech.Core.Logging.AssemblyInfo.cs
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ModuleTech.Core.Logging.csproj.CoreCompileInputs.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\bin\Debug\net9.0\ModuleTech.Core.Logging.deps.json
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\bin\Debug\net9.0\ModuleTech.Core.Logging.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\bin\Debug\net9.0\ModuleTech.Core.Logging.pdb
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ModuleTech.Core.Logging.csproj.AssemblyReference.cache
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ModuleTech.Core.Logging.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\refint\ModuleTech.Core.Logging.dll
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ModuleTech.Core.Logging.pdb
+C:\Users\09373118\Source\Repos\ModuleTech\src\Core\ModuleTech.Core.Logging\obj\Debug\net9.0\ref\ModuleTech.Core.Logging.dll
