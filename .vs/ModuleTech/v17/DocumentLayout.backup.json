@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\",
+  "WorkspaceRootPath": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|c:\\users\\09373118\\source\\repos\\moduletech\\src\\presentation\\moduletech.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{CC7AC39E-9D96-4720-B904-E6BEA52D3328}|src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj|c:\\users\\zehra.turhan\\source\\repos\\moduletech\\src\\infrastructure\\moduletech.persistence\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC7AC39E-9D96-4720-B904-E6BEA52D3328}|src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj|solutionrelative:src\\infrastructure\\moduletech.persistence\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|c:\\users\\zehra.turhan\\source\\repos\\moduletech\\src\\presentation\\moduletech.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|solutionrelative:src\\presentation\\moduletech.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|c:\\users\\09373118\\source\\repos\\moduletech\\src\\presentation\\moduletech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|c:\\users\\zehra.turhan\\source\\repos\\moduletech\\src\\presentation\\moduletech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|solutionrelative:src\\presentation\\moduletech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|c:\\users\\zehra.turhan\\source\\repos\\moduletech\\src\\presentation\\moduletech.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55365CDA-CF45-45A8-A78D-B8BEB3A27C0C}|src\\Presentation\\ModuleTech.API\\ModuleTech.API.csproj|solutionrelative:src\\presentation\\moduletech.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,6 +28,10 @@
           "DockedWidth": 226,
           "SelectedChildIndex": 38,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -67,10 +79,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -175,28 +183,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
-              "RelativeToolTip": "src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-20T21:51:06.406Z",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModuleTech.Persistence\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModuleTech.Persistence\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T09:10:39.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Program.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\ModuleTech.API\\Program.cs",
-              "ToolTip": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Program.cs",
               "RelativeToolTip": "src\\Presentation\\ModuleTech.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAiwEQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T21:48:42.706Z",
+              "WhenOpened": "2025-08-01T07:59:21.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
+              "RelativeToolTip": "src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-01T07:18:56.894Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\ModuleTech.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\Presentation\\ModuleTech.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T08:18:15.008Z"
             }
           ]
         },

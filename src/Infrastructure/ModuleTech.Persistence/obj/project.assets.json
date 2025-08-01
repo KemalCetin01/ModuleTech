@@ -4650,25 +4650,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\09373118\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Zehra.turhan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj",
       "projectName": "ModuleTech.Persistence",
-      "projectPath": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj",
-      "packagesPath": "C:\\Users\\09373118\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\obj\\",
+      "projectPath": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj",
+      "packagesPath": "C:\\Users\\Zehra.turhan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\09373118\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Zehra.turhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4678,20 +4676,18 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\09373118\\Source\\Repos\\MS Project Nugets": {},
-        "C:\\Users\\09373118\\Source\\Repos\\OperationalLeasing.API\\KSLease.OL": {},
-        "C:\\Users\\09373118\\Source\\Repos\\nugets": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.saglik.gov.tr/nuget": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Core\\ModuleTech.Application\\ModuleTech.Application.csproj": {
-              "projectPath": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Core\\ModuleTech.Application\\ModuleTech.Application.csproj"
+            "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Core\\ModuleTech.Application\\ModuleTech.Application.csproj": {
+              "projectPath": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Core\\ModuleTech.Application\\ModuleTech.Application.csproj"
             },
-            "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Core\\ModuleTech.Domain\\ModuleTech.Domain.csproj": {
-              "projectPath": "C:\\Users\\09373118\\Source\\Repos\\ModuleTech\\src\\Core\\ModuleTech.Domain\\ModuleTech.Domain.csproj"
+            "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Core\\ModuleTech.Domain\\ModuleTech.Domain.csproj": {
+              "projectPath": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Core\\ModuleTech.Domain\\ModuleTech.Domain.csproj"
             }
           }
         }
@@ -4706,7 +4702,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -4748,18 +4744,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-            "version": "[9.0.205, 9.0.205]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
