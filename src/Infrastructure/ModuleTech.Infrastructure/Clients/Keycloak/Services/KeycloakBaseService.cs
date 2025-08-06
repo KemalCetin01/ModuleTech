@@ -65,7 +65,7 @@ public class KeycloakBaseService : RestService, IKeycloakTokenService //TODO: Bu
         collection.Add(new("grant_type", _keycloakOptions.grant_type));
         //collection.Add(new("client_id", _keycloakOptions.msidentity_client_id));
         //collection.Add(new("client_secret", _keycloakOptions.msidentity_client_secret));
-        collection.Add(new("client_id", _keycloakOptions.moduleTech_client_id));
+        collection.Add(new("client_id", _keycloakOptions.master_client_id));
         collection.Add(new("client_secret", _keycloakOptions.master_client_secret));
 
         var content = new FormUrlEncodedContent(collection);

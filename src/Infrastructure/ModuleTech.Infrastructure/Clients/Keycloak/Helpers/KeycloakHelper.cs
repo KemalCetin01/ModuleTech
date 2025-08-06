@@ -19,7 +19,7 @@ public static class KeycloakHelper
             credentials = new[] { new CredentialsModel { value = password } },
             attributes = new Dictionary<string, IEnumerable<string>>
             {
-                { KeycloakConstants.ODRefId, new List<string>() { referenceId } }
+                { KeycloakConstants.IdentityRefId, new List<string>() { referenceId } }
             }
         };
     }

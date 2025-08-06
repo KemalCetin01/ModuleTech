@@ -391,12 +391,12 @@ public class AuthB2BService : IAuthB2BService
 
     private async Task<UserB2B> ValidateB2BResendOtpAsync(CancellationToken cancellationToken)
     {
-        var userB2BEntity = await _userB2BRepository.GetById(_headerContext.ODRefId.Value, cancellationToken);
+        var userB2BEntity = await _userB2BRepository.GetById(_headerContext.IdentityRefId.Value, cancellationToken);
 
         if (userB2BEntity == null)
             throw new ApiException(B2BUserConstants.RecordNotFound);
 
-        var isVerified = await _userOTPRepository.IsVerifiedAsync(_headerContext.ODRefId.Value, UserTypeEnum.B2B, OtpTypeEnum.SignUp, cancellationToken);
+        var isVerified = await _userOTPRepository.IsVerifiedAsync(_headerContext.IdentityRefId.Value, UserTypeEnum.B2B, OtpTypeEnum.SignUp, cancellationToken);
 
         if (isVerified)
             throw new ApiException(IsVerifiedUser);

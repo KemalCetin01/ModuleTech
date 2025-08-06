@@ -45,7 +45,7 @@ public abstract class IdentityKeycloakBaseService : IIdentityBaseService
             credentials = new[] { new CredentialRepresentation { value = request.Password, type="password",temporary=false} },
             attributes = new Dictionary<string, ICollection<string>>
             {
-                { KeycloakConstants.ODRefId, new List<string>() { request.UserId.ToString() } }
+                { KeycloakConstants.IdentityRefId, new List<string>() { request.UserId.ToString() } }
             }
         };
 

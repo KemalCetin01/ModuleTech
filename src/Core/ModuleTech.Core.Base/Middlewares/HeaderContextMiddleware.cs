@@ -15,8 +15,8 @@ public class HeaderContextMiddleware
 
     public async Task InvokeAsync(HttpContext context, HeaderContext headerContext)
     {
-        if (context.Request.Headers.TryGetValue("ODRefId", out var identityRefId))
-            headerContext.ODRefId = Guid.TryParse(identityRefId, out var odRefId) ? odRefId : null;
+        if (context.Request.Headers.TryGetValue("IdentityRefId", out var identityRefId))
+            headerContext.IdentityRefId = Guid.TryParse(identityRefId, out var IdentityRefId) ? IdentityRefId : null;
 
         headerContext.Locale = CultureInfo.CurrentCulture.Parent.Name.ToLower();
         await _next(context);
