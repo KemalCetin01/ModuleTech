@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModuleTech.Core.Caching")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82c55d226c58a1c771b1f43c745569031f337bb6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7e6c59393a5e13308c2e0ce3ccacd111a6080e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModuleTech.Core.Caching")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModuleTech.Core.Caching")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\Migrations\\20250801091133_firstCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Infrastructure\\ModuleTech.Persistence\\Migrations\\20250801091133_firstCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC7AC39E-9D96-4720-B904-E6BEA52D3328}|src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj|c:\\users\\zehra.turhan\\source\\repos\\moduletech\\src\\infrastructure\\moduletech.persistence\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC7AC39E-9D96-4720-B904-E6BEA52D3328}|src\\Infrastructure\\ModuleTech.Persistence\\ModuleTech.Persistence.csproj|solutionrelative:src\\infrastructure\\moduletech.persistence\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -183,6 +187,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20250801091133_firstCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\Migrations\\20250801091133_firstCreate.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModuleTech.Persistence\\Migrations\\20250801091133_firstCreate.cs",
+              "ToolTip": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\Migrations\\20250801091133_firstCreate.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModuleTech.Persistence\\Migrations\\20250801091133_firstCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T09:11:33.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Infrastructure\\ModuleTech.Persistence\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\ModuleTech.Persistence\\Context\\AppDbContext.cs",
@@ -195,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Program.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\ModuleTech.API\\Program.cs",
@@ -207,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "src\\Presentation\\ModuleTech.API\\appsettings.Development.json",
@@ -220,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Zehra.turhan\\source\\repos\\ModuleTech\\src\\Presentation\\ModuleTech.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\ModuleTech.API\\Controllers\\AuthController.cs",
