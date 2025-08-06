@@ -37,15 +37,14 @@ public class MappingProfile : Profile
         CreateMap<Product, ProductDTO>();
         CreateMap<EmployeeRole, EmployeeRoleDTO>();
         CreateMap<UserEmployee, UserEmployeeDTO>();
-        CreateMap<B2BUserGetByIdDTO, UserB2B>().ReverseMap()
-         .ForMember(dest => dest.RepresentativeId, opt => opt.MapFrom(src => src.UserEmployeeId))
+        CreateMap<BusinessUserGetByIdDTO, BusinessUser>().ReverseMap()
          .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.User.FirstName))
          .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.User.LastName))
          .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.User.Email))
          .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.User.Id))
          .ForMember(dest => dest.IdentityRefId, opt => opt.MapFrom(src => src.User.IdentityRefId));
         CreateMap<SearchProductsQuery, SearchProductFilterModel>();
-        CreateMap<B2BUserListDTO, UserB2B>().ReverseMap()
+        CreateMap<BusinessUserListDTO, BusinessUser>().ReverseMap()
          .ForMember(dest => dest.Representative, opt => opt.MapFrom(src => src.UserEmployeeId))
          .ForMember(dest => dest.FullName, opt => opt.MapFrom(src => src.User.FirstName))
          .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.User.Email))
@@ -53,7 +52,7 @@ public class MappingProfile : Profile
          .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.User.Id));
         CreateMap<SearchProductFilterModel, SearchProductsQuery>();
         CreateMap<SearchProductsQuery, SearchQueryModel<SearchProductFilterModel>>();
-        CreateMap<UserQueryFilter, UserB2BQueryServiceFilter>().ReverseMap();
+        CreateMap<UserQueryFilter, BusinessUserQueryServiceFilter>().ReverseMap();
 
         CreateMap<SearchProcutFilter, SearchProductFilterModel>();
         CreateMap<TokenModel, AuthenticationDTO>()

@@ -1,4 +1,4 @@
-﻿using ModuleTech.Application.Handlers.B2bRoles.DTOs;
+﻿using ModuleTech.Application.Handlers.BusinessUserRoles.DTOs;
 using ModuleTech.Application.Handlers.Keycloak.Commands;
 using ModuleTech.Core.Base.IoC;
 using ModuleTech.Infrastructure.Clients.Keycloak.Models;

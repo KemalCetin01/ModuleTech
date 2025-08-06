@@ -2,6 +2,6 @@
 
 public enum UserTypeEnum
 {
-    B2B = 1,
+    BusinessUser = 1,
     EMPLOYEE = 3
 }

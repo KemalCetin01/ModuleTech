@@ -10,7 +10,7 @@ public static class ServiceRegistration
     public static void AddInfrastructureLayer(this IServiceCollection serviceCollection)
     {
         serviceCollection.AddKeycloakServices();
-        serviceCollection.AddScoped<IIdentityB2BService, IdentityKeycloakB2BService>();
+        serviceCollection.AddScoped<IIdentityBusinessUserService, IdentityKeycloakBusinessUserService>();
         serviceCollection.AddScoped<IIdentityEmployeeService, IdentityKeycloakEmployeeService>();
     }
 }

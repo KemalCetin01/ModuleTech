@@ -9,7 +9,7 @@ namespace ModuleTech.Domain
 
         public Guid? EmployeeRoleId { get; set; }
         public EmployeeRole? EmployeeRole { get; set; } = null!;
-        public ICollection<UserB2B>? UserB2Bs { get; set; }
+        public ICollection<BusinessUser>? BusinessUsers { get; set; }
         public Guid UserId { get; set; }
         public User User { get; set; }
         public bool IsDeleted { get; set; }

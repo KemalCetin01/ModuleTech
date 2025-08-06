@@ -14,7 +14,7 @@ public class AppDbContext: BaseDbContext
     public DbSet<Product> Products { get; set; }
     protected DbSet<UserEmployee> UserEmployees { get; set; } = null!;
     protected DbSet<EmployeeRole> EmployeeRoles { get; set; } = null!;
-    protected DbSet<UserB2B> UserB2Bs { get; set; } = null!;
+    protected DbSet<BusinessUser> BusinessUsers { get; set; } = null!;
     public DbSet<UserResetPassword> UserResetPasswords { get; set; } = null!;
     protected DbSet<User> Users { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,7 +23,7 @@ public class AppDbContext: BaseDbContext
         modelBuilder.ApplyConfiguration(new EmployeeRoleConfigurations());
         modelBuilder.ApplyConfiguration(new ProductConfigurations());
         modelBuilder.ApplyConfiguration(new UserConfigurations());
-        modelBuilder.ApplyConfiguration(new UserB2BConfigurations());
+        modelBuilder.ApplyConfiguration(new BusinessUserConfigurations());
         modelBuilder.ApplyConfiguration(new UserEmployeeConfigurations());
         modelBuilder.ApplyConfiguration(new UserOTPConfigurations());
         modelBuilder.ApplyConfiguration(new UserResetPasswordConfigurations());

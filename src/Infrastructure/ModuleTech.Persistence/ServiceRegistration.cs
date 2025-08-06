@@ -23,7 +23,7 @@ public static class ServiceRegistration
         serviceCollection.AddScoped<IEmployeeRoleRepository, EmployeeRoleRepository>();
         serviceCollection.AddScoped<IProductRepository, ProductRepository>();
         serviceCollection.AddScoped<IUserRepository, UserRepository>();
-        serviceCollection.AddScoped<IUserB2BRepository, UserB2BRepository>();
+        serviceCollection.AddScoped<IBusinessUserRepository, BusinessUserRepository>();
         serviceCollection.AddScoped<IUserEmployeeRepository, UserEmployeeRepository>();
         serviceCollection.AddScoped<IUserOTPRepository, UserOTPRepository>();
         serviceCollection.AddScoped<IUserResetPasswordRepository, UserResetPasswordRepository>();

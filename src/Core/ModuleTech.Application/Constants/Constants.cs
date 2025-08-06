@@ -29,7 +29,7 @@ public partial class Constants
         public const string DiscountRate = "discountRate";
 
     }
-    public class B2BUserConstants
+    public class BusinessUserConstants
     {
         public const string RecordNotFound = "Record Not Found";
 

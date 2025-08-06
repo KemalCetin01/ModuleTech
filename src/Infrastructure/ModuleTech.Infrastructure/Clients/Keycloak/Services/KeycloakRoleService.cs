@@ -1,5 +1,5 @@
 ﻿using ModuleTech.Application.Core.Persistence.Repositories;
-using ModuleTech.Application.Handlers.B2bRoles.DTOs;
+using ModuleTech.Application.Handlers.BusinessUserRoles.DTOs;
 using ModuleTech.Application.Handlers.Keycloak.Commands;
 using ModuleTech.Application.Helpers.Options;
 using ModuleTech.Core.ExceptionHandling.Exceptions;
@@ -18,15 +18,15 @@ namespace ModuleTech.Infrastructure.Clients.Keycloak.Services;
 
 public class KeycloakRoleService : KeycloakBaseService, IKeycloakRoleService
 {
-    private readonly IUserB2BRepository _userB2BRepository;
+    private readonly IBusinessUserRepository _businessUserRepository;
     private readonly IMapper _mapper;
 
-    public KeycloakRoleService(IOptions<KeycloakOptions> options, HttpClient client, IMapper mapper, IUserB2BRepository userB2BRepository,
+    public KeycloakRoleService(IOptions<KeycloakOptions> options, HttpClient client, IMapper mapper, IBusinessUserRepository businessUserRepository,
         string baseAddress = null, Dictionary<string, string> requestHeaders = null) : base(options, client,
         baseAddress, requestHeaders)
     {
         _mapper = mapper;
-        _userB2BRepository = userB2BRepository;
+        _businessUserRepository = businessUserRepository;
     }
 
     #region realm-level roles and composites
@@ -212,7 +212,7 @@ public class KeycloakRoleService : KeycloakBaseService, IKeycloakRoleService
     public async Task<KeycloackDataResponse<bool>> SetGroupRolePermissions(SetGroupPermissionsCommandDTO request,
         string realm, CancellationToken cancellationToken)
     {
-        var userKeycloakIdList = (await _userB2BRepository.GetUsersByBusinessKeycloakId(request.id, cancellationToken))
+        var userKeycloakIdList = (await _businessUserRepository.GetUsersByBusinessKeycloakId(request.id, cancellationToken))
                             ?.Select(user => user.User.IdentityRefId.ToString())
                             .ToList();
 

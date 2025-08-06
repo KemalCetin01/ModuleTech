@@ -17,11 +17,11 @@ public static class UserStatusCodes
     public static BaseException EmailAlreadyAdded = new ApiException(message: "Bu email kullanılmaktadır!", statusCode: "EMAIL_ALREADY_ADDED");
 
     public static BaseException B2CUserAddedError = new ApiException(message: "B2C Kullanıcısı eklerken hata oluştu!", statusCode: "B2C_USER_ADDED_ERROR");
-    public static BaseException B2BUserAddedError = new ApiException(message: "B2B Kullanıcısı eklerken hata oluştu!", statusCode: "B2B_USER_ADDED_ERROR");
+    public static BaseException BusinessUserAddedError = new ApiException(message: "BusinessUser Kullanıcısı eklerken hata oluştu!", statusCode: "BusinessUser_USER_ADDED_ERROR");
     public static BaseException BusinessAddedError = new ApiException(message: "Business eklerken hata oluştu!", statusCode: "BUSINESSS_ADDED_ERROR");
 
     public static BaseException B2CUserUpdatedError = new ApiException(message: "B2C Kullanıcısını güncellerken hata oluştu!", statusCode: "B2C_USER_UPDATED_ERROR");
-    public static BaseException B2BUserUpdatedError = new ApiException(message: "B2B Kullanıcısını güncellerken hata oluştu!", statusCode: "B2B_USER_UPDATED_ERROR");
+    public static BaseException BusinessUserUpdatedError = new ApiException(message: "BusinessUser Kullanıcısını güncellerken hata oluştu!", statusCode: "BusinessUser_USER_UPDATED_ERROR");
 
     public static BaseException CurrentAccountNotFound = new ApiException(message: "Cari hesap bulunamadı!", statusCode: "CURRENT_ACCOUNT_NOT_FOUND");
     public static BaseException CurrentAccountConflict = new ApiException(message: "Cari Mevcut!", statusCode: "CURRENT_ACCOUNT_CONFLICT");

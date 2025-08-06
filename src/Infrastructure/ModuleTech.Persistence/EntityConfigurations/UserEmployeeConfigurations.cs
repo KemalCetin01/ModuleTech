@@ -8,7 +8,7 @@ public class UserEmployeeConfigurations : IEntityTypeConfiguration<UserEmployee>
         builder.HasKey(x => x.UserId);
 
 
-        builder.HasMany(x => x.UserB2Bs)
+        builder.HasMany(x => x.BusinessUsers)
             .WithOne(x => x.UserEmployee)
             .HasForeignKey(x => x.UserEmployeeId)
             .HasPrincipalKey(x => x.UserId);
