@@ -11,7 +11,7 @@ public class AuthTokenService : IAuthTokenService
     public AuthTokenService()
     {
     }
-
+     
     public IdentityUserInfoResponseDto GetUserDetailsFromJwtToken(string token, CancellationToken cancellationToken)
     {
         var handler = new JwtSecurityTokenHandler();
