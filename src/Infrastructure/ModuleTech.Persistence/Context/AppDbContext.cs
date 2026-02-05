@@ -28,6 +28,7 @@ public class AppDbContext: BaseDbContext
         modelBuilder.ApplyConfiguration(new UserOTPConfigurations());
         modelBuilder.ApplyConfiguration(new UserResetPasswordConfigurations());
 
+        modelBuilder.UseSnakeCaseNaming();
     }
 }
 //dotnet ef migrations add InitialCreate --project src/Infrastructure/ModuleTech.Persistence --startup-project src/Presentation/ModuleTech.API
