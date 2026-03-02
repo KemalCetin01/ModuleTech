@@ -1,5 +1,4 @@
 using ModuleTech.Core.BaseEntities;
-using ModuleTech.Domain.Enums;
 
 namespace ModuleTech.Domain;
 
@@ -32,5 +31,7 @@ public class Tesis : BaseSoftDeleteEntity
     public virtual ICollection<Belge> Belgeler { get; set; } = new List<Belge>();
 
     public virtual ICollection<Basvuru> Basvurular { get; set; } = new List<Basvuru>();
+
+    public virtual ICollection<GeciciIsletme> GeciciIsletmeler { get; set; } = new List<GeciciIsletme>();
 }
 

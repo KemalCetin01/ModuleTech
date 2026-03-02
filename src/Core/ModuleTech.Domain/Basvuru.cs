@@ -43,6 +43,11 @@ public class Basvuru : BaseSoftDeleteEntity //OK...
     /// </summary>
     public virtual BasvuruYenileme? BasvuruYenileme { get; set; }
 
+    /// <summary>
+    /// Muafiyet detayları (1:1). Sadece muafiyet başvurularında dolu olur.
+    /// </summary>
+    public virtual Muafiyet? Muafiyet { get; set; }
+
     public virtual ICollection<BasvuruBelge> BasvuruBelgeleri { get; set; } = new List<BasvuruBelge>();
 
 

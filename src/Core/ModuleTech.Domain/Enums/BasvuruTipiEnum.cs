@@ -1,9 +1,10 @@
 namespace ModuleTech.Domain.Enums;
 
-public enum BasvuruTipiEnum
+public enum BasvuruTipiEnum 
 {
     IlMudurlugu = 1,
     GFB = 2,
-    IzinLisans = 3
+    IzinLisans = 3,
+    Muafiyet = 4
 }
 
