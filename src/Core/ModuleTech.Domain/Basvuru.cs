@@ -50,7 +50,12 @@ public class Basvuru : BaseSoftDeleteEntity //OK...
 
     public virtual ICollection<BasvuruBelge> BasvuruBelgeleri { get; set; } = new List<BasvuruBelge>();
 
-
     public virtual ICollection<Bildirim> Bildirimler { get; set; } = new List<Bildirim>();
+
+    /// <summary>
+    /// MODÜL 8: Bu başvuruyla ilişkili iptal kayıtları.
+    /// UC-IPT-001 A1 (eksiklik süre aşımı), A2 (başvuru red), A3 (uygunluk yapılmadı) senaryoları.
+    /// </summary>
+    public virtual ICollection<Iptal> Iptaller { get; set; } = new List<Iptal>();
 }
 

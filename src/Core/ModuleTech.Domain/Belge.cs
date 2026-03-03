@@ -34,5 +34,9 @@ public class Belge : BaseSoftDeleteEntity //OK........
     public virtual ICollection<BelgeGecerlilikUyari> GecerlilikUyarilari { get; set; } = new List<BelgeGecerlilikUyari>();
 
     public virtual ICollection<BelgeLisansKonu> BelgeLisansKonulari { get; set; } = new List<BelgeLisansKonu>();
+
+    public virtual ICollection<Iptal> Iptaller { get; set; } = new List<Iptal>();
+
+    public virtual ICollection<IptalCezaliBasvuru> IptalCezaliBasvurular { get; set; } = new List<IptalCezaliBasvuru>();
 }
 
