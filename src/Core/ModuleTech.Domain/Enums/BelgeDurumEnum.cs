@@ -11,6 +11,9 @@ public enum BelgeDurumEnum
     UygunsuzlukSuresiVerildi = 5,
 
     /// <summary>UC-IPT-006: Faaliyet sonlandırma sebebiyle iptal (Md.14(6))</summary>
-    FaaliyetSonlandirmaIptal = 6
+    FaaliyetSonlandirmaIptal = 6,
+
+    /// <summary>UC-OZL-005: Lisans konularına yönelik askıya alındı (Şartname 9.5.1.7)</summary>
+    Askida = 7
 }
 

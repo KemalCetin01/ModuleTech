@@ -18,5 +18,8 @@ public class IzinLisansKonu : BaseSoftDeleteEntity //OK........
 
     // Navigation Properties
     public virtual ICollection<BelgeLisansKonu> BelgeLisansKonulari { get; set; } = new List<BelgeLisansKonu>();
+
+    /// <summary>MODÜL 9 - UC-OZL-005: Bu lisans konusunun askıya alındığı kayıtlar.</summary>
+    public virtual ICollection<BelgeAskiLisansKonu> BelgeAskiLisansKonulari { get; set; } = new List<BelgeAskiLisansKonu>();
 }
 

@@ -33,5 +33,11 @@ public class Tesis : BaseSoftDeleteEntity
     public virtual ICollection<Basvuru> Basvurular { get; set; } = new List<Basvuru>();
 
     public virtual ICollection<GeciciIsletme> GeciciIsletmeler { get; set; } = new List<GeciciIsletme>();
+
+    /// <summary>MODÜL 9: Tesise ait görüş talepleri.</summary>
+    public virtual ICollection<GorusTalebi> GorusTalepleri { get; set; } = new List<GorusTalebi>();
+
+    /// <summary>MODÜL 9: Tesise ait ÖFB kayıtları.</summary>
+    public virtual ICollection<OfbKayit> OfbKayitlari { get; set; } = new List<OfbKayit>();
 }
 

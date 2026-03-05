@@ -38,5 +38,11 @@ public class Belge : BaseSoftDeleteEntity //OK........
     public virtual ICollection<Iptal> Iptaller { get; set; } = new List<Iptal>();
 
     public virtual ICollection<IptalCezaliBasvuru> IptalCezaliBasvurular { get; set; } = new List<IptalCezaliBasvuru>();
+
+    /// <summary>MODÜL 9: Belgeye ait görüş talepleri.</summary>
+    public virtual ICollection<GorusTalebi> GorusTalepleri { get; set; } = new List<GorusTalebi>();
+
+    /// <summary>MODÜL 9 - UC-OZL-005: Belge askıya alma kayıtları.</summary>
+    public virtual ICollection<BelgeAski> BelgeAskilari { get; set; } = new List<BelgeAski>();
 }
 

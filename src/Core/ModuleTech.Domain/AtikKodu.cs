@@ -15,5 +15,8 @@ public class AtikKodu : BaseSoftDeleteEntity //OK........
 
     // Navigation Properties
     public virtual ICollection<BasvuruAtikKodu> BasvuruAtikKodlari { get; set; } = new List<BasvuruAtikKodu>();
+
+    /// <summary>MODÜL 9 - UC-OZL-003: ÖFB kayıtlarıyla ilişkili atık kodları.</summary>
+    public virtual ICollection<OfbAtikKodu> OfbAtikKodlari { get; set; } = new List<OfbAtikKodu>();
 }
 
