@@ -15,7 +15,6 @@ public class AppDbContext: BaseDbContext
     protected DbSet<UserEmployee> UserEmployees { get; set; } = null!;
     protected DbSet<EmployeeRole> EmployeeRoles { get; set; } = null!;
     protected DbSet<BusinessUser> BusinessUsers { get; set; } = null!;
-    public DbSet<UserResetPassword> UserResetPasswords { get; set; } = null!;
     protected DbSet<User> Users { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -25,8 +24,6 @@ public class AppDbContext: BaseDbContext
         modelBuilder.ApplyConfiguration(new UserConfigurations());
         modelBuilder.ApplyConfiguration(new BusinessUserConfigurations());
         modelBuilder.ApplyConfiguration(new UserEmployeeConfigurations());
-        modelBuilder.ApplyConfiguration(new UserOTPConfigurations());
-        modelBuilder.ApplyConfiguration(new UserResetPasswordConfigurations());
 
         modelBuilder.UseSnakeCaseNaming();
     }

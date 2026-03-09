@@ -8,7 +8,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="" />
+    <list default="true" id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Login/BusinessUserLoginCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Login/BusinessUserRefreshTokenCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserResendOtpCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserSignUpCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserSignUpCommandValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserVerifyOtpCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/ResetPassword/BusinessUserChangePasswordCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/ResetPassword/BusinessUserResetPasswordCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/ResetPassword/BusinessUserResetVerifyOtpCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/AuthenticationDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserLoginDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserSignupCommandDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserValidateSignUpAddressDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserValidateSignUpInfoDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ChangePasswordCommandDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/RefreshTokenDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ResendOtpDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ResetPasswordCommandDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ResetVerifyOtpDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/SignUpDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/VerifyOtpDTO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserInformationValidationQueryValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserValidateSignUpAddressQuery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserValidateSignUpAddressQueryValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserValidateSignUpInfoQuery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/GetUserInfoQuery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Infrastructure/Services/AuthTokenService.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +57,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Başvuru-iptal" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,42 +74,6 @@
     &quot;accountId&quot;: &quot;2f764841-2394-4d74-8ae9-e4e11421da3e&quot;
   }
 }</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/819bf98444804a588fe2b5e410606a3337910/_8ad91/HttpStatusCode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/global.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/BasvuruYenileme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Belge.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/BelgeGecerlilikUyari.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/BelgeLisansKonu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Bildirim.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/BildirimTercih.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/AktiflestirmeNedeniEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/BasvuruDurumEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/BasvuruTipiEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/BelgeDurumEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/BelgeTipiEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/BildirimDurumEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/BildirimOlayTipiEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/BildirimTipiEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/GorusTalebiDurumEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/GorusTalebiTipiEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/MuafiyetTipiEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Enums/OfbDurumEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/GeciciIsletme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/GorusTalebi.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/GorusTalebiBelge.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/GorusYanit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Iptal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/IptalBelge.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/IptalCezaliBasvuru.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/IptalYenidenAktiflestirme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/IzinLisansKonu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Muafiyet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/OfbKayit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/OfbTipSablon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/OfbTipSablonVersiyon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Core/ModuleTech.Domain/Tesis.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -108,7 +101,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "main-base",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -137,6 +130,7 @@
       <workItem from="1772701799604" duration="646000" />
       <workItem from="1772708189888" duration="11348000" />
       <workItem from="1773043110132" duration="244000" />
+      <workItem from="1773043361615" duration="4042000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -186,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772692324124</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix">
+      <option name="closed" value="true" />
+      <created>1773043411231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773043411231</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,10 +211,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="başvuru Yenileme YEN" />
     <MESSAGE value="muafiyet başvurusu MUA" />
-    <MESSAGE value="fix" />
     <MESSAGE value="iptal işlemi" />
     <MESSAGE value="fix görüş talebi ve bel yön" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix görüş talebi ve bel yön" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
