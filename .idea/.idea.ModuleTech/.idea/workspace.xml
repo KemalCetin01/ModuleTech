@@ -9,34 +9,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Login/BusinessUserLoginCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Login/BusinessUserRefreshTokenCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserResendOtpCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserSignUpCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserSignUpCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/Register/BusinessUserVerifyOtpCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/ResetPassword/BusinessUserChangePasswordCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/ResetPassword/BusinessUserResetPasswordCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Commands/BusinessUser/ResetPassword/BusinessUserResetVerifyOtpCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/AuthenticationDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserLoginDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserSignupCommandDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserValidateSignUpAddressDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/BusinessUser/BusinessUserValidateSignUpInfoDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ChangePasswordCommandDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/RefreshTokenDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ResendOtpDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ResetPasswordCommandDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/ResetVerifyOtpDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/SignUpDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/DTOs/VerifyOtpDTO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserInformationValidationQueryValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserValidateSignUpAddressQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserValidateSignUpAddressQueryValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/BusinessUser/BusinessUserValidateSignUpInfoQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Handlers/Auth/Queries/GetUserInfoQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Infrastructure/Services/AuthTokenService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Core/Infrastructure/Services/Product/IProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Core/Infrastructure/Services/Product/IProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Core/Persistence/Repositories/IProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Core/Persistence/Repositories/IProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Core.Base/Concrete/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Core.Base/Concrete/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Core.Caching/Helper/RedisOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Core.Caching/Helper/RedisOption.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Core.Caching/Helper/RedisServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Core.Caching/Helper/RedisServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Domain/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Domain/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Infrastructure/Services/Product/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Infrastructure/Services/Product/ProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Repositories/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Repositories/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Controllers/CategoryController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Controllers/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +62,14 @@
     &quot;accountId&quot;: &quot;2f764841-2394-4d74-8ae9-e4e11421da3e&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.claude/settings.local.json" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -93,23 +89,47 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main-base",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ModuleTech.API.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main-base&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="ModuleTech.API" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/src/Presentation/ModuleTech.API/bin/Debug/net9.0/ModuleTech.API.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Presentation/ModuleTech.API" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/src/Presentation/ModuleTech.API/ModuleTech.API.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net9.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="" />
@@ -130,7 +150,9 @@
       <workItem from="1772701799604" duration="646000" />
       <workItem from="1772708189888" duration="11348000" />
       <workItem from="1773043110132" duration="244000" />
-      <workItem from="1773043361615" duration="4042000" />
+      <workItem from="1773043361615" duration="9222000" />
+      <workItem from="1773059986054" duration="2272000" />
+      <workItem from="1773122704834" duration="7574000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -188,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773043411231</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix">
+      <option name="closed" value="true" />
+      <created>1773053643518</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773053643518</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

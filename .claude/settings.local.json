@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(xargs cat:*)",
-      "Bash(dotnet build:*)"
+      "Bash(dotnet build:*)",
+      "Bash(dotnet ef:*)",
+      "Bash(dotnet tool:*)",
+      "Bash(export:*)",
+      "Bash(xargs grep:*)",
+      "Bash(timeout 12 dotnet run:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(taskkill:*)",
+      "Bash(cmd:*)"
     ]
   }
 }

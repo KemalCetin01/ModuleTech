@@ -1,4 +1,5 @@
 ﻿using ModuleTech.Application.Core.Persistence.Repositories;
+using ModuleTech.Core.Base.Dtos.Response;
 using ModuleTech.Core.Base.Models;
 using ModuleTech.Domain;
 using ModuleTech.Domain.EntityFilters;
@@ -17,6 +18,14 @@ public class ProductRepository : Repository<Product, AppDbContext>, IProductRepo
     public async Task<bool> HasProductExits(string name, Guid? id, CancellationToken cancellationToken)
     {
         return await Queryable().AnyAsync(x=>x.Name==name && x.Id!=id&&!x.IsDeleted);
+    }
+
+    public async Task<List<LabelValueResponse>> GetKeyValueAsync(CancellationToken cancellationToken)
+    {
+        return await Queryable()
+            .Where(x => !x.IsDeleted)
+            .Select(x => new LabelValueResponse { Value = x.Id, Label = x.Name })
+            .ToListAsync(cancellationToken);
     }
 
     public async Task<SearchListModel<Product>> SearchAsync(SearchQueryModel<SearchProductFilterModel> searchQuery, CancellationToken cancellationToken)

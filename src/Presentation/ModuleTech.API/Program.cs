@@ -19,16 +19,12 @@ using ModuleTech.API.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 
+if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")))
+    Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Development");
+
 var builder = WebApplication.CreateBuilder(args);
 
-
-var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 var configuration = builder.Configuration;
-
-configuration
-    .AddJsonFile("appsettings.json", true, true)
-    .AddJsonFile($"appsettings.{env}.json", true, true)
-    .Build();
 
 builder.Services.AddOptions<KeycloakOptions>().BindConfiguration("KeycloakOptions");
 
