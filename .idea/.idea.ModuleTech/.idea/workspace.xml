@@ -9,13 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.claude/agents/code-reviewer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.claude/agents/express-reviewer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.claude/agents/security-checker.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.claude/agents/test-writer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.claude/rules/middleware.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.claude/rules/shared-component.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.claude/rules/utils.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -150,6 +143,10 @@
       <workItem from="1773148431288" duration="686000" />
       <workItem from="1773149168195" duration="392000" />
       <workItem from="1773210268437" duration="1449000" />
+      <workItem from="1773220679258" duration="97000" />
+      <workItem from="1773220799950" duration="273000" />
+      <workItem from="1773221152910" duration="628000" />
+      <workItem from="1773221821674" duration="1375000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />

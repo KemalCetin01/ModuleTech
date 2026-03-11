@@ -10,7 +10,10 @@
       "Bash(npm install)",
       "Bash(npm run build)",
       "Bash(npx tsc --noEmit)",
-      "Bash(curl *localhost*)"
+      "Bash(curl *localhost*)",
+      "Bash(CLAUDECODE= claude --help 2>&1)",
+      "Bash(CLAUDECODE= claude --version 2>&1)",
+      "Bash(CLAUDECODE= claude -r 2>&1)"
     ],
     "deny": [
       "Bash(rm -rf *)",
