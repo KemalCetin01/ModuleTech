@@ -6,10 +6,10 @@
       "Grep",
       "Write",
       "Edit",
-      "Bash(npm run dev)",
-      "Bash(npm install)",
-      "Bash(npm run build)",
-      "Bash(npx tsc --noEmit)",
+      "Bash(dotnet build*)",
+      "Bash(dotnet run*)",
+      "Bash(dotnet ef*)",
+      "Bash(dotnet test*)",
       "Bash(curl *localhost*)",
       "Bash(CLAUDECODE= claude --help 2>&1)",
       "Bash(CLAUDECODE= claude --version 2>&1)",
@@ -17,8 +17,8 @@
     ],
     "deny": [
       "Bash(rm -rf *)",
-      "Bash(npm publish*)",
-      "Bash(git push*)"
+      "Bash(git push*)",
+      "Bash(dotnet ef database update*--environment Production*)"
     ]
   },
   "hooks": {

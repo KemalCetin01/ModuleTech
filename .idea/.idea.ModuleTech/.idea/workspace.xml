@@ -9,13 +9,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UseCase.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/code-reviewer.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/code-reviewer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/express-reviewer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/security-checker.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/security-checker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/agents/test-writer.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/test-writer.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModuleTech.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ModuleTech.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>

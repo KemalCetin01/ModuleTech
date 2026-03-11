@@ -1,58 +1,111 @@
 ---
 name: test-writer
-description: Backend ve frontend icin kapsamli test dosyalari yazar
+description: .NET backend icin xUnit + Moq + FluentAssertions ile kapsamli testler yazar
 tools: Read, Write, Glob, Grep, Edit, Bash
 model: sonnet
 ---
 
 Verilen kod icin kapsamli testler yaz.
 
-## Backend Test (Vitest + supertest)
+## Test Framework
+- xUnit (test framework)
+- Moq (mocking)
+- FluentAssertions (assertion)
 
-Test dosya konumu: `backend/src/__tests__/`
+## Test Projesi Yapisi
+- Konum: `tests/ModuleTech.Application.Tests/` ve `tests/ModuleTech.API.Tests/`
+- Test dosya adi: `<SinifAdi>Tests.cs`
+- Namespace: `ModuleTech.Application.Tests.Handlers.<Entity>`
 
-### SearchService testleri:
-- findAll: tum kayitlari dondurur
-- findById: mevcut kayit dondurur
-- findById: bulunamayan id icin undefined dondurur
-- findByFilter: filtreleme dogru calisir
-- findByFilter: bos filtre tum kayitlari dondurur
+## Handler Testleri
 
-### OperationalService testleri:
-- create: yeni kayit olusturur ve dondurur
-- create: zorunlu alan eksikse hata firlatir
-- update: mevcut kaydi gunceller
-- update: bulunamayan id icin undefined dondurur
-- delete: mevcut kaydi siler, true dondurur
-- delete: bulunamayan id icin false dondurur
+### Command Handler:
+```csharp
+public class CreateEntityCommandHandlerTests
+{
+    private readonly Mock<IEntityService> _serviceMock;
+    private readonly CreateEntityCommandHandler _handler;
 
-### Route testleri (supertest):
-- GET endpoint'leri 200 dondurur
-- POST endpoint'leri 201 dondurur
-- PUT endpoint'leri 200 dondurur
-- DELETE endpoint'leri 200 dondurur
-- Bulunamayan kayit 404 dondurur
-- Gecersiz body 400 dondurur
+    public CreateEntityCommandHandlerTests()
+    {
+        _serviceMock = new Mock<IEntityService>();
+        _handler = new CreateEntityCommandHandler(_serviceMock.Object);
+    }
 
-## Frontend Test (Vitest + React Testing Library)
+    [Fact]
+    public async Task Handle_GecerliKomut_EntityDTODondurur()
+    {
+        // Arrange
+        var command = new CreateEntityCommand { Name = "Test" };
+        var expectedDto = new EntityDTO { Id = Guid.NewGuid(), Name = "Test" };
+        _serviceMock.Setup(s => s.AddAsync(command, It.IsAny<CancellationToken>()))
+            .ReturnsAsync(expectedDto);
 
-Test dosya konumu: `frontend/src/__tests__/` veya feature klasoru icinde `*.test.tsx`
+        // Act
+        var result = await _handler.Handle(command, CancellationToken.None);
 
-### Component testleri:
-- Render: component hatasiz renderlanir
-- Loading state: yukleme gostergesi gorunur
-- Error state: hata mesaji gorunur
-- Liste: veriler tabloda gorunur
-- Form: alanlar doldurulup gonderilir
-- Delete: onay dialog'u gorunur
+        // Assert
+        result.Should().NotBeNull();
+        result.Name.Should().Be("Test");
+        _serviceMock.Verify(s => s.AddAsync(command, It.IsAny<CancellationToken>()), Times.Once);
+    }
+}
+```
 
-### RTK Query mock:
-- API hook'larini mock'la (vi.mock)
-- Farkli state'leri test et (loading, success, error)
+### Query Handler:
+- GetDetails: mevcut kayit dondurur, bulunamayanlar icin exception firlatir
+- Search: pagination ve filtreleme dogru calisir
+- KeyValue: LabelValueResponse listesi dondurur
 
-## Kurallar:
+## Validator Testleri
 
-- describe/it bloklari Turkce aciklama
+```csharp
+public class CreateEntityCommandValidatorTests
+{
+    private readonly CreateEntityCommandValidator _validator;
+
+    public CreateEntityCommandValidatorTests()
+    {
+        _validator = new CreateEntityCommandValidator();
+    }
+
+    [Fact]
+    public async Task Validate_BosIsim_HataVermeli()
+    {
+        // Arrange
+        var command = new CreateEntityCommand { Name = "" };
+
+        // Act
+        var result = await _validator.ValidateAsync(command);
+
+        // Assert
+        result.IsValid.Should().BeFalse();
+        result.Errors.Should().Contain(e => e.PropertyName == "Name");
+    }
+}
+```
+
+## Service Testleri
+
+- Mock: `IMapper`, `IEntityRepository`, `IModuleTechUnitOfWork`, `IRedisCacheService`
+- AddAsync: entity olusturur, CommitAsync cagrilir, cache'e yazilir
+- UpdateAsync: mevcut entity gunceller, conflict kontrolu calisir
+- DeleteAsync: soft delete yapar (IsDeleted = true), cache temizlenir
+- SearchAsync: repository'e dogru parametreler iletilir
+- ConflictControl: ayni isimle kayit varsa ConflictException firlatir
+
+## Test Adlandirma
+- Pattern: `MethodName_Senaryo_BeklenenSonuc`
+- Ornekler:
+  - `Handle_GecerliKomut_EntityDTODondurur`
+  - `Handle_BulunamayanId_ResourceNotFoundExceptionFirlatir`
+  - `Validate_BosIsim_HataVermeli`
+  - `DeleteAsync_MevcutEntity_SoftDeleteYapar`
+
+## Kurallar
 - Her test bagimsiz calismali (izole)
 - AAA pattern: Arrange, Act, Assert
-- Test dosya adi: `<kaynak>.test.ts` veya `<Component>.test.tsx`
+- Mock setup her test icinde yapilmali
+- FluentAssertions kullan (`.Should().Be()`, `.Should().NotBeNull()`, `.Should().Throw<>()`)
+- async testler `Task` donmeli
+- `CancellationToken.None` kullan
