@@ -1,16 +1,47 @@
 {
   "permissions": {
     "allow": [
-      "Bash(xargs cat:*)",
-      "Bash(dotnet build:*)",
-      "Bash(dotnet ef:*)",
-      "Bash(dotnet tool:*)",
-      "Bash(export:*)",
-      "Bash(xargs grep:*)",
-      "Bash(timeout 12 dotnet run:*)",
-      "mcp__ide__getDiagnostics",
-      "Bash(taskkill:*)",
-      "Bash(cmd:*)"
+      "Read",
+      "Glob",
+      "Grep",
+      "Write",
+      "Edit",
+      "Bash(npm run dev)",
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(curl *localhost*)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(npm publish*)",
+      "Bash(git push*)"
     ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -qE '(rm -rf|DROP TABLE|DELETE FROM.*WHERE 1|shutdown)'; then echo 'TEHLIKELI KOMUT ENGELLENDI' >&2; exit 2; fi"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f progress.md ]; then echo '⚠ DEVAM EDEN GOREV VAR: progress.md dosyasini oku ve kaldigin yerden devam et'; fi"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "dotnet-skills@dotnet-skills": true
   }
 }
