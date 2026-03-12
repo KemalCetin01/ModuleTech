@@ -1,6 +1,7 @@
 ﻿using ModuleTech.Core.Base.Concrete;
 using ModuleTech.Domain;
 using ModuleTech.Persistence.EntityConfigurations;
+using ModuleTech.Persistence.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace ModuleTech.Persistence.Context;
@@ -28,6 +29,7 @@ public class AppDbContext: BaseDbContext
         modelBuilder.ApplyConfiguration(new UserEmployeeConfigurations());
 
         modelBuilder.UseSnakeCaseNaming();
+        modelBuilder.ApplyEnumComments();
     }
 }
 //dotnet ef migrations add InitialCreate --project src/Infrastructure/ModuleTech.Persistence --startup-project src/Presentation/ModuleTech.API

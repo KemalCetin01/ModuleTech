@@ -9,14 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.claude/rules/enums.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Mappers/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Mappers/MappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Core.ExceptionHandling/Exceptions/UserStatusCodes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Core.ExceptionHandling/Exceptions/UserStatusCodes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Domain/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Domain/Category.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Context/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/ServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/ServiceRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Controllers/ProductController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,7 @@
       <workItem from="1773220799950" duration="273000" />
       <workItem from="1773221152910" duration="628000" />
       <workItem from="1773221821674" duration="1375000" />
-      <workItem from="1773295291184" duration="3766000" />
+      <workItem from="1773295291184" duration="4940000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -236,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773229929831</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix category">
+      <option name="closed" value="true" />
+      <created>1773306585101</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1773306585101</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +269,8 @@
     <MESSAGE value="fix görüş talebi ve bel yön" />
     <MESSAGE value="fix" />
     <MESSAGE value="md dosyalarının oluşturulması" />
-    <option name="LAST_COMMIT_MESSAGE" value="md dosyalarının oluşturulması" />
+    <MESSAGE value="fix category" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix category" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

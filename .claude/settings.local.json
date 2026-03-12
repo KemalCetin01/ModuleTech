@@ -13,7 +13,9 @@
       "Bash(curl *localhost*)",
       "Bash(CLAUDECODE= claude --help 2>&1)",
       "Bash(CLAUDECODE= claude --version 2>&1)",
-      "Bash(CLAUDECODE= claude -r 2>&1)"
+      "Bash(CLAUDECODE= claude -r 2>&1)",
+      "Bash(powershell.exe -Command \"Set-Location 'C:\\\\Users\\\\kemal.cetin\\\\RiderProjects\\\\ModuleTech'; dotnet build ModuleTech.sln --no-restore -v q 2>&1 | Select-String -NotMatch 'obj\\\\\\\\\\\\\\\\' | Select-Object -Last 20\")",
+      "Bash(powershell.exe -Command \"Set-Location 'C:\\\\Users\\\\kemal.cetin\\\\RiderProjects\\\\ModuleTech'; dotnet build ModuleTech.sln -v q 2>&1 | Select-Object -Last 15\")"
     ],
     "deny": [
       "Bash(rm -rf *)",

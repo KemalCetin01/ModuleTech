@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ModuleTech.Persistence.Context;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ModuleTech.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260312092723_FixEnumCommentFormat")]
+    partial class FixEnumCommentFormat
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -63,7 +66,7 @@ namespace ModuleTech.Persistence.Migrations
                     b.Property<int>("SiteStatus")
                         .HasColumnType("integer")
                         .HasColumnName("site_status")
-                        .HasComment("1=Open - 2=Closed");
+                        .HasComment("1=Open, 2=Closed");
 
                     b.Property<int?>("TownId")
                         .HasColumnType("integer")
@@ -80,7 +83,7 @@ namespace ModuleTech.Persistence.Migrations
                     b.Property<int>("UserStatus")
                         .HasColumnType("integer")
                         .HasColumnName("user_status")
-                        .HasComment("1=Active - 2=Inactive - 3=Deleted");
+                        .HasComment("1=Active, 2=Inactive, 3=Deleted");
 
                     b.HasKey("UserId")
                         .HasName("pk_business_user");
@@ -126,7 +129,7 @@ namespace ModuleTech.Persistence.Migrations
                     b.Property<int?>("MuafiyetDurum")
                         .HasColumnType("integer")
                         .HasColumnName("muafiyet_durum")
-                        .HasComment("gurultu_muafiyeti=GurultuMuafiyeti - hava_emisyonu_muafiyeti=HavaEmisyonuMuafiyeti");
+                        .HasComment("gurultu_muafiyeti=GurultuMuafiyeti, hava_emisyonu_muafiyeti=HavaEmisyonuMuafiyeti");
 
                     b.Property<string>("Name")
                         .IsRequired()
