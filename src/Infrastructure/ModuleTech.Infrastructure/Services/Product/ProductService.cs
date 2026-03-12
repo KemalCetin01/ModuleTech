@@ -4,6 +4,7 @@ using ModuleTech.Application.Core.Persistence.UoW;
 using ModuleTech.Application.DTOs.Product.Response;
 using ModuleTech.Application.Handlers.Product.Commands;
 using ModuleTech.Application.Handlers.Product.DTOs;
+using ModuleTech.Core.Base.Dtos.Response;
 using ModuleTech.Core.Base.Models;
 using ModuleTech.Core.Base.Wrapper;
 using ModuleTech.Core.Caching.Interface;
@@ -123,6 +124,9 @@ public class ProductService : IProductService
 
         await _redisCacheService.RemoveAsync($"productTest:{id}", cancellationToken);
     }
+
+    public async Task<List<LabelValueResponse>> GetKeyValueAsync(CancellationToken cancellationToken)
+        => await _productRepository.GetKeyValueAsync(cancellationToken);
 
     private async Task<bool> ProductConflictControl(string name, Guid? id, CancellationToken cancellationToken)
     {

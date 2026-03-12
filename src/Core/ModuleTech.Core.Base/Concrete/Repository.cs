@@ -120,11 +120,15 @@ public class Repository<TEntity, TContext> : IRepository<TEntity>
     protected virtual IQueryable<TEntity> SearchOrderQuery(IQueryable<TEntity> query, SortModel? sortModel)
     {
         if (sortModel != null)
+        {
+            var fieldName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(sortModel.Field);
+            var property = typeof(TEntity).GetProperty(fieldName);
+            if (property == null) return query;
+
             query = sortModel.Direction.ToUpper() == "DESC"
-                ? query.OrderByDescending(x =>
-                    EF.Property<object>(x, CultureInfo.CurrentCulture.TextInfo.ToTitleCase(sortModel.Field)))
-                : query.OrderBy(x =>
-                    EF.Property<object>(x, CultureInfo.CurrentCulture.TextInfo.ToTitleCase(sortModel.Field)));
+                ? query.OrderByDescending(x => EF.Property<object>(x, fieldName))
+                : query.OrderBy(x => EF.Property<object>(x, fieldName));
+        }
         return query;
     }
 

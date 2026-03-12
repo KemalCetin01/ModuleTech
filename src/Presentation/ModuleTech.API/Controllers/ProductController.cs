@@ -18,13 +18,21 @@ public class ProductController : BaseApiController
 
 
     /// <summary>
+    /// returns products as key-value list
+    /// </summary>
+    [HttpGet("fkey-list")]
+    [MapToApiVersion("1.0")]
+    public async Task<IActionResult> GetKeyValue(CancellationToken cancellationToken)
+        => Ok(await _requestBus.Send(new GetProductsKeyValueQuery(), cancellationToken));
+
+    /// <summary>
     /// returns all products
     /// </summary>
     [HttpPost("search")]
     [MapToApiVersion("1.0")]
     public async Task<IActionResult> Get([FromBody] SearchProductsQuery searchProductsQuery)
     {
-        return StatusCode(StatusCodes.Status200OK, (await _requestBus.Send(searchProductsQuery)).Data);
+        return StatusCode(StatusCodes.Status200OK, (await _requestBus.Send(searchProductsQuery)));
     }
 
 

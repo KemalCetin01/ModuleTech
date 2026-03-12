@@ -1,6 +1,7 @@
 ﻿using ModuleTech.Core.Base.Concrete;
 using ModuleTech.Domain;
 using ModuleTech.Persistence.EntityConfigurations;
+using ModuleTech.Persistence.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace ModuleTech.Persistence.Context;
@@ -12,23 +13,23 @@ public class AppDbContext: BaseDbContext
     {
     }
     public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
     protected DbSet<UserEmployee> UserEmployees { get; set; } = null!;
     protected DbSet<EmployeeRole> EmployeeRoles { get; set; } = null!;
     protected DbSet<BusinessUser> BusinessUsers { get; set; } = null!;
-    public DbSet<UserResetPassword> UserResetPasswords { get; set; } = null!;
     protected DbSet<User> Users { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfiguration(new EmployeeRoleConfigurations());
         modelBuilder.ApplyConfiguration(new ProductConfigurations());
+        modelBuilder.ApplyConfiguration(new CategoryConfigurations());
         modelBuilder.ApplyConfiguration(new UserConfigurations());
         modelBuilder.ApplyConfiguration(new BusinessUserConfigurations());
         modelBuilder.ApplyConfiguration(new UserEmployeeConfigurations());
-        modelBuilder.ApplyConfiguration(new UserOTPConfigurations());
-        modelBuilder.ApplyConfiguration(new UserResetPasswordConfigurations());
 
         modelBuilder.UseSnakeCaseNaming();
+        modelBuilder.ApplyEnumComments();
     }
 }
 //dotnet ef migrations add InitialCreate --project src/Infrastructure/ModuleTech.Persistence --startup-project src/Presentation/ModuleTech.API

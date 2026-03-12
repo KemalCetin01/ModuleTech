@@ -1,9 +1,13 @@
-﻿using ModuleTech.Core.BaseEntities;
+﻿using ModuleTech.Core.Base.Attributes;
+using ModuleTech.Core.BaseEntities;
 
 namespace ModuleTech.Domain;
 public class Product: BaseSoftDeleteEntity
 {
-        public string Name { get; set; }
-        public string Url { get; set; }
-    }
+    [QuerySearch]
+    public string Name { get; set; }
+
+    [QuerySearch]
+    public string Url { get; set; }
+}
 

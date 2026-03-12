@@ -1,6 +1,7 @@
 ﻿using ModuleTech.Application.DTOs.Product.Response;
 using ModuleTech.Application.Handlers.Product.Commands;
 using ModuleTech.Application.Handlers.Product.DTOs;
+using ModuleTech.Core.Base.Dtos.Response;
 using ModuleTech.Core.Base.IoC;
 using ModuleTech.Core.Base.Models;
 using ModuleTech.Core.Base.Wrapper;
@@ -14,4 +15,5 @@ public interface IProductService : IScopedService
     Task<ProductDTO> AddAsync(CreateProductCommand createProductCommand, CancellationToken cancellationToken);
     Task<ProductDTO> UpdateAsync(UpdateProductCommand updateProductCommand, CancellationToken cancellationToken);
     Task DeleteAsync(Guid id, CancellationToken cancellationToken);
+    Task<List<LabelValueResponse>> GetKeyValueAsync(CancellationToken cancellationToken);
 }

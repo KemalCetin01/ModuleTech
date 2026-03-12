@@ -1,5 +1,7 @@
-﻿using ModuleTech.Application.DTOs.Product.Response;
-using ModuleTech.Application.Handlers.Auth.DTOs;
+﻿using ModuleTech.Application.DTOs.Category.Response;
+using ModuleTech.Application.DTOs.Product.Response;
+using ModuleTech.Application.Handlers.Category.DTOs;
+using ModuleTech.Application.Handlers.Category.Queries;
 using ModuleTech.Application.Handlers.EmployeeRoles.DTOs;
 using ModuleTech.Application.Handlers.Product.DTOs;
 using ModuleTech.Application.Handlers.Product.Queries;
@@ -8,7 +10,6 @@ using ModuleTech.Application.Handlers.User.Queries.Filters;
 using ModuleTech.Application.Handlers.UserEmployees.DTOs;
 using ModuleTech.Core.Base.Handlers.Search;
 using ModuleTech.Core.Base.Models;
-using ModuleTech.Core.Base.Models.Token;
 using ModuleTech.Core.Base.Wrapper;
 using ModuleTech.Domain;
 using ModuleTech.Domain.EntityFilters;
@@ -35,6 +36,14 @@ public class MappingProfile : Profile
         CreateMap<GetAllProductsResponseDto, ProductDTO>();
         CreateMap<ProductDTO, GetAllProductsResponseDto>();
         CreateMap<Product, ProductDTO>();
+
+        CreateMap<GetAllCategoriesResponseDto, CategoryDTO>();
+        CreateMap<CategoryDTO, GetAllCategoriesResponseDto>();
+        CreateMap<Category, CategoryDTO>();
+        CreateMap<SearchCategoriesQuery, SearchCategoryFilterModel>();
+        CreateMap<SearchCategoryFilterModel, SearchCategoriesQuery>();
+        CreateMap<SearchCategoriesQuery, SearchQueryModel<SearchCategoryFilterModel>>();
+        CreateMap<SearchCategoryFilter, SearchCategoryFilterModel>();
         CreateMap<EmployeeRole, EmployeeRoleDTO>();
         CreateMap<UserEmployee, UserEmployeeDTO>();
         CreateMap<BusinessUserGetByIdDTO, BusinessUser>().ReverseMap()
@@ -55,15 +64,6 @@ public class MappingProfile : Profile
         CreateMap<UserQueryFilter, BusinessUserQueryServiceFilter>().ReverseMap();
 
         CreateMap<SearchProcutFilter, SearchProductFilterModel>();
-        CreateMap<TokenModel, AuthenticationDTO>()
-         .ForMember(dest => dest.AccessToken, opt => opt.MapFrom(src => src.access_token))
-         .ForMember(dest => dest.ExpiresIn, opt => opt.MapFrom(src => src.expires_in))
-         .ForMember(dest => dest.RefreshExpiresIn, opt => opt.MapFrom(src => src.refresh_expires_in))
-         .ForMember(dest => dest.RefreshToken, opt => opt.MapFrom(src => src.refresh_token))
-         .ForMember(dest => dest.TokenType, opt => opt.MapFrom(src => src.token_type))
-         .ForMember(dest => dest.notbeforepolicy, opt => opt.MapFrom(src => src.notbeforepolicy))
-         .ForMember(dest => dest.scope, opt => opt.MapFrom(src => src.scope))
-            ;
 
         // Ana map tanımı, Filter manuel bağlanmalı
         CreateMap<SearchProductsQuery, SearchQueryModel<SearchProductFilterModel>>();

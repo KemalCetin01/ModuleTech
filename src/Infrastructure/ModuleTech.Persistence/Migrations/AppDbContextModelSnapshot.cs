@@ -62,7 +62,8 @@ namespace ModuleTech.Persistence.Migrations
 
                     b.Property<int>("SiteStatus")
                         .HasColumnType("integer")
-                        .HasColumnName("site_status");
+                        .HasColumnName("site_status")
+                        .HasComment("1=Open - 2=Closed");
 
                     b.Property<int?>("TownId")
                         .HasColumnType("integer")
@@ -78,7 +79,8 @@ namespace ModuleTech.Persistence.Migrations
 
                     b.Property<int>("UserStatus")
                         .HasColumnType("integer")
-                        .HasColumnName("user_status");
+                        .HasColumnName("user_status")
+                        .HasComment("1=Active - 2=Inactive - 3=Deleted");
 
                     b.HasKey("UserId")
                         .HasName("pk_business_user");
@@ -87,6 +89,62 @@ namespace ModuleTech.Persistence.Migrations
                         .HasDatabaseName("ix_business_user_user_employee_id");
 
                     b.ToTable("business_user", (string)null);
+                });
+
+            modelBuilder.Entity("ModuleTech.Domain.Category", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
+
+                    b.Property<Guid?>("CreatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("created_by");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_date");
+
+                    b.Property<Guid?>("DeletedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("deleted_by");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("deleted_date");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("description");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_deleted");
+
+                    b.Property<int?>("MuafiyetDurum")
+                        .HasColumnType("integer")
+                        .HasColumnName("muafiyet_durum")
+                        .HasComment("gurultu_muafiyeti=GurultuMuafiyeti - hava_emisyonu_muafiyeti=HavaEmisyonuMuafiyeti");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("name");
+
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uuid")
+                        .HasColumnName("updated_by");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("updated_date");
+
+                    b.HasKey("Id")
+                        .HasName("pk_category");
+
+                    b.ToTable("category", (string)null);
                 });
 
             modelBuilder.Entity("ModuleTech.Domain.EmployeeRole", b =>
@@ -298,121 +356,6 @@ namespace ModuleTech.Persistence.Migrations
                     b.ToTable("user_employee", (string)null);
                 });
 
-            modelBuilder.Entity("ModuleTech.Domain.UserOTP", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_date");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("text")
-                        .HasColumnName("email");
-
-                    b.Property<DateTime?>("ExpireDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("expire_date");
-
-                    b.Property<bool>("IsVerified")
-                        .HasColumnType("boolean")
-                        .HasColumnName("is_verified");
-
-                    b.Property<string>("OtpCode")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("otp_code");
-
-                    b.Property<int?>("OtpType")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(1)
-                        .HasColumnName("otp_type")
-                        .HasComment("1:signUp - 2:ResetPassword - 3:CreatePassword");
-
-                    b.Property<string>("Phone")
-                        .HasMaxLength(15)
-                        .HasColumnType("character varying(15)")
-                        .HasColumnName("phone");
-
-                    b.Property<int?>("Platform")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(1)
-                        .HasColumnName("platform")
-                        .HasComment("1:businessUser - 3:employee");
-
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("user_id");
-
-                    b.Property<DateTime?>("VerificationDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("verification_date");
-
-                    b.Property<int?>("VerificationType")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(1)
-                        .HasColumnName("verification_type")
-                        .HasComment("1:email - 2:phone");
-
-                    b.HasKey("Id")
-                        .HasName("pk_user_otp");
-
-                    b.HasIndex("UserId")
-                        .HasDatabaseName("ix_user_otp_user_id");
-
-                    b.ToTable("user_otp", (string)null);
-                });
-
-            modelBuilder.Entity("ModuleTech.Domain.UserResetPassword", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("id");
-
-                    b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_date");
-
-                    b.Property<DateTime?>("ExpireDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("expire_date");
-
-                    b.Property<bool>("IsUsed")
-                        .HasColumnType("boolean")
-                        .HasColumnName("is_used");
-
-                    b.Property<DateTime?>("ResetPasswordDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("reset_password_date");
-
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("user_id");
-
-                    b.Property<Guid>("UserOtpId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("user_otp_id");
-
-                    b.HasKey("Id")
-                        .HasName("pk_user_reset_password");
-
-                    b.HasIndex("UserId")
-                        .HasDatabaseName("ix_user_reset_password_user_id");
-
-                    b.HasIndex("UserOtpId")
-                        .IsUnique()
-                        .HasDatabaseName("ix_user_reset_password_user_otp_id");
-
-                    b.ToTable("user_reset_password", (string)null);
-                });
-
             modelBuilder.Entity("ModuleTech.Domain.BusinessUser", b =>
                 {
                     b.HasOne("ModuleTech.Domain.UserEmployee", "UserEmployee")
@@ -451,35 +394,6 @@ namespace ModuleTech.Persistence.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ModuleTech.Domain.UserOTP", b =>
-                {
-                    b.HasOne("ModuleTech.Domain.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .HasConstraintName("fk_user_otp_user_user_id");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("ModuleTech.Domain.UserResetPassword", b =>
-                {
-                    b.HasOne("ModuleTech.Domain.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .HasConstraintName("fk_user_reset_password_user_user_id");
-
-                    b.HasOne("ModuleTech.Domain.UserOTP", "UserOTP")
-                        .WithOne("UserResetPassword")
-                        .HasForeignKey("ModuleTech.Domain.UserResetPassword", "UserOtpId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_user_reset_password_user_otp_user_otp_id");
-
-                    b.Navigation("User");
-
-                    b.Navigation("UserOTP");
-                });
-
             modelBuilder.Entity("ModuleTech.Domain.EmployeeRole", b =>
                 {
                     b.Navigation("UserEmployees");
@@ -488,11 +402,6 @@ namespace ModuleTech.Persistence.Migrations
             modelBuilder.Entity("ModuleTech.Domain.UserEmployee", b =>
                 {
                     b.Navigation("BusinessUsers");
-                });
-
-            modelBuilder.Entity("ModuleTech.Domain.UserOTP", b =>
-                {
-                    b.Navigation("UserResetPassword");
                 });
 #pragma warning restore 612, 618
         }

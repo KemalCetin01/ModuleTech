@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Write",
+      "Edit",
+      "Bash(dotnet build*)",
+      "Bash(dotnet run*)",
+      "Bash(dotnet ef*)",
+      "Bash(dotnet test*)",
+      "Bash(curl *localhost*)",
+      "Bash(CLAUDECODE= claude --help 2>&1)",
+      "Bash(CLAUDECODE= claude --version 2>&1)",
+      "Bash(CLAUDECODE= claude -r 2>&1)",
+      "Bash(powershell.exe -Command \"Set-Location 'C:\\\\Users\\\\kemal.cetin\\\\RiderProjects\\\\ModuleTech'; dotnet build ModuleTech.sln --no-restore -v q 2>&1 | Select-String -NotMatch 'obj\\\\\\\\\\\\\\\\' | Select-Object -Last 20\")",
+      "Bash(powershell.exe -Command \"Set-Location 'C:\\\\Users\\\\kemal.cetin\\\\RiderProjects\\\\ModuleTech'; dotnet build ModuleTech.sln -v q 2>&1 | Select-Object -Last 15\")"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push*)",
+      "Bash(dotnet ef database update*--environment Production*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$TOOL_INPUT\" | grep -qE '(rm -rf|DROP TABLE|DELETE FROM.*WHERE 1|shutdown)'; then echo 'TEHLIKELI KOMUT ENGELLENDI' >&2; exit 2; fi"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f progress.md ]; then echo '⚠ DEVAM EDEN GOREV VAR: progress.md dosyasini oku ve kaldigin yerden devam et'; fi"
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "dotnet-skills@dotnet-skills": true
+  }
+}

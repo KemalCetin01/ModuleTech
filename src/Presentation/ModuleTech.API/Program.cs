@@ -19,30 +19,25 @@ using ModuleTech.API.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 
+if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")))
+    Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Development");
+
 var builder = WebApplication.CreateBuilder(args);
 
-
-var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 var configuration = builder.Configuration;
 
-configuration
-    .AddJsonFile("appsettings.json", true, true)
-    .AddJsonFile($"appsettings.{env}.json", true, true)
-    .Build();
-
 builder.Services.AddOptions<KeycloakOptions>().BindConfiguration("KeycloakOptions");
-builder.Services.AddOptions<OtpOptions>().BindConfiguration("OtpOptions");
 
 builder.Services.AddControllers();
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer("Bearer", options =>
     {
         options.Authority = "http://localhost:8080/realms/ModuleTech";
-        options.RequireHttpsMetadata = false; // Geliþtirme ortamýnda HTTPS zorunluluðunu kaldýrýr
+        options.RequireHttpsMetadata = false; // Geliï¿½tirme ortamï¿½nda HTTPS zorunluluï¿½unu kaldï¿½rï¿½r
         options.Audience = "ms:ModuleTech"; // Client ID
     });
 
-builder.Services.AddAuthorization(); // Bu satýr zaten vardý
+builder.Services.AddAuthorization(); // Bu satï¿½r zaten vardï¿½
 
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
@@ -65,8 +60,8 @@ builder.Services.AddVersionedApiExplorer(setup =>
     setup.GroupNameFormat = "'v'VVV";
     setup.SubstituteApiVersionInUrl = true;
 });
-builder.Services.AddApiLayer(); //RequestBus ve MediatR için gerekli servisleri ekler
-builder.Services.AddServices(); //ITransientService ve IScopedService için gerekli servisleri ekler. interfaceye IScoped ekliyse otomatik olarak Scoped olarak ekler. ITransientService ise Transient olarak ekler.
+builder.Services.AddApiLayer(); //RequestBus ve MediatR iï¿½in gerekli servisleri ekler
+builder.Services.AddServices(); //ITransientService ve IScopedService iï¿½in gerekli servisleri ekler. interfaceye IScoped ekliyse otomatik olarak Scoped olarak ekler. ITransientService ise Transient olarak ekler.
 //builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddHeaderContext();
 
