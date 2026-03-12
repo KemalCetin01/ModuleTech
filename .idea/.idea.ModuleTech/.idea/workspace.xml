@@ -9,25 +9,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d5aa67-96f3-41a6-9c44-91ec34b515ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UseCase.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/agents/code-reviewer.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/code-reviewer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/agents/express-reviewer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/agents/security-checker.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/security-checker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/agents/test-writer.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/agents/test-writer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ModuleTech/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModuleTech.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ModuleTech.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Mappers/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Application/Mappers/MappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/ModuleTech.Core.ExceptionHandling/Exceptions/UserStatusCodes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/ModuleTech.Core.ExceptionHandling/Exceptions/UserStatusCodes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Context/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Context/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/ServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/ModuleTech.Persistence/ServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/ModuleTech.API/Controllers/ProductController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-      <option value="repository" />
-    </option>
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
@@ -62,6 +56,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.claude/settings.local.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -87,24 +82,24 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.ModuleTech.API.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#3 on main-base&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.ModuleTech.API.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main-base",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ModuleTech.API" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/src/Presentation/ModuleTech.API/bin/Debug/net9.0/ModuleTech.API.exe" />
@@ -159,6 +154,7 @@
       <workItem from="1773220799950" duration="273000" />
       <workItem from="1773221152910" duration="628000" />
       <workItem from="1773221821674" duration="1375000" />
+      <workItem from="1773295291184" duration="3766000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -232,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773136737219</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="md dosyalarının oluşturulması">
+      <option name="closed" value="true" />
+      <created>1773229929831</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1773229929831</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +262,8 @@
     <MESSAGE value="iptal işlemi" />
     <MESSAGE value="fix görüş talebi ve bel yön" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="md dosyalarının oluşturulması" />
+    <option name="LAST_COMMIT_MESSAGE" value="md dosyalarının oluşturulması" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

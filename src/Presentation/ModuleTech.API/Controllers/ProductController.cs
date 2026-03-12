@@ -32,7 +32,7 @@ public class ProductController : BaseApiController
     [MapToApiVersion("1.0")]
     public async Task<IActionResult> Get([FromBody] SearchProductsQuery searchProductsQuery)
     {
-        return StatusCode(StatusCodes.Status200OK, (await _requestBus.Send(searchProductsQuery)).Data);
+        return StatusCode(StatusCodes.Status200OK, (await _requestBus.Send(searchProductsQuery)));
     }
 
 

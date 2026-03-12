@@ -23,7 +23,7 @@ Presentation (API) → Application (Handlers/DTOs/Services) → Domain (Entities
 SYS, KUL, CG, BSV, DEG, YEN, MUA, IPT, OZL, BLG, RPR, ENT, BLD
 
 ## Dil Kuralı
-- Kod (class, property, method): İngilizce
+- Kod (class, property, method): Türkçe
 - UI mesajları, validation mesajları: Türkçe
 - Yorumlar: Türkçe tercih
 
@@ -33,6 +33,22 @@ SYS, KUL, CG, BSV, DEG, YEN, MUA, IPT, OZL, BLG, RPR, ENT, BLD
 - Migration oluştur: `dotnet ef migrations add <Name> --project src/Infrastructure/ModuleTech.Persistence --startup-project src/Presentation/ModuleTech.API`
 - Migration uygula: `dotnet ef database update --project src/Infrastructure/ModuleTech.Persistence --startup-project src/Presentation/ModuleTech.API`
 - Test: `dotnet test`
+
+## Migration Kuralları
+Yeni bir entity için migration oluşturmadan önce şu 3 adımın tamamlanmış olması zorunludur:
+
+1. **EntityConfiguration** — `src/Infrastructure/ModuleTech.Persistence/EntityConfigurations/<Entity>Configurations.cs` dosyası oluşturulmuş ve `IEntityTypeConfiguration<Entity>` implement edilmiş olmalı.
+2. **AppDbContext** — `src/Infrastructure/ModuleTech.Persistence/Context/AppDbContext.cs` içinde:
+   - `public DbSet<Entity> Entities { get; set; }` satırı eklenmiş olmalı.
+   - `OnModelCreating` içinde `modelBuilder.ApplyConfiguration(new EntityConfigurations());` çağrısı eklenmiş olmalı.
+3. **Migration komutu** — Yukarıdaki iki adım tamamlandıktan sonra:
+   ```
+   dotnet ef migrations add Add<Entity>Table --project src/Infrastructure/ModuleTech.Persistence --startup-project src/Presentation/ModuleTech.API
+   ```
+   Ardından uygulamak için:
+   ```
+   dotnet ef database update --project src/Infrastructure/ModuleTech.Persistence --startup-project src/Presentation/ModuleTech.API
+   ```
 
 ## CQRS Pattern
 - Write işlemleri: `ICommand<TResponse>` veya `ICommand` (void)
@@ -47,10 +63,13 @@ SYS, KUL, CG, BSV, DEG, YEN, MUA, IPT, OZL, BLG, RPR, ENT, BLD
 - Sayfalama: `PagedResponse<T>`
 - Key-Value: `ListResponse<LabelValueResponse>`
 
-## DI Convention
+## DI Convention Service
 - Scoped: `IScopedService` implement et
 - Transient: `ITransientService` implement et
 - Auto-registration marker interface ile çalışır
+
+## DI Convention Repository
+- di Repository için çalışmaz. inject edilmesi gerekir.
 
 ## Referans Şablon
 Yeni modül oluştururken Product modülünü referans al:

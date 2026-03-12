@@ -1,4 +1,7 @@
-﻿using ModuleTech.Application.DTOs.Product.Response;
+﻿using ModuleTech.Application.DTOs.Category.Response;
+using ModuleTech.Application.DTOs.Product.Response;
+using ModuleTech.Application.Handlers.Category.DTOs;
+using ModuleTech.Application.Handlers.Category.Queries;
 using ModuleTech.Application.Handlers.EmployeeRoles.DTOs;
 using ModuleTech.Application.Handlers.Product.DTOs;
 using ModuleTech.Application.Handlers.Product.Queries;
@@ -33,6 +36,14 @@ public class MappingProfile : Profile
         CreateMap<GetAllProductsResponseDto, ProductDTO>();
         CreateMap<ProductDTO, GetAllProductsResponseDto>();
         CreateMap<Product, ProductDTO>();
+
+        CreateMap<GetAllCategoriesResponseDto, CategoryDTO>();
+        CreateMap<CategoryDTO, GetAllCategoriesResponseDto>();
+        CreateMap<Category, CategoryDTO>();
+        CreateMap<SearchCategoriesQuery, SearchCategoryFilterModel>();
+        CreateMap<SearchCategoryFilterModel, SearchCategoriesQuery>();
+        CreateMap<SearchCategoriesQuery, SearchQueryModel<SearchCategoryFilterModel>>();
+        CreateMap<SearchCategoryFilter, SearchCategoryFilterModel>();
         CreateMap<EmployeeRole, EmployeeRoleDTO>();
         CreateMap<UserEmployee, UserEmployeeDTO>();
         CreateMap<BusinessUserGetByIdDTO, BusinessUser>().ReverseMap()

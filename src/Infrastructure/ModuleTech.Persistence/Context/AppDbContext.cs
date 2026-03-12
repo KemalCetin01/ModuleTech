@@ -12,6 +12,7 @@ public class AppDbContext: BaseDbContext
     {
     }
     public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
     protected DbSet<UserEmployee> UserEmployees { get; set; } = null!;
     protected DbSet<EmployeeRole> EmployeeRoles { get; set; } = null!;
     protected DbSet<BusinessUser> BusinessUsers { get; set; } = null!;
@@ -21,6 +22,7 @@ public class AppDbContext: BaseDbContext
         base.OnModelCreating(modelBuilder);
         modelBuilder.ApplyConfiguration(new EmployeeRoleConfigurations());
         modelBuilder.ApplyConfiguration(new ProductConfigurations());
+        modelBuilder.ApplyConfiguration(new CategoryConfigurations());
         modelBuilder.ApplyConfiguration(new UserConfigurations());
         modelBuilder.ApplyConfiguration(new BusinessUserConfigurations());
         modelBuilder.ApplyConfiguration(new UserEmployeeConfigurations());

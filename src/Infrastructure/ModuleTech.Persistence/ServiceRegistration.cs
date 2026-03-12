@@ -22,6 +22,7 @@ public static class ServiceRegistration
 
         serviceCollection.AddScoped<IEmployeeRoleRepository, EmployeeRoleRepository>();
         serviceCollection.AddScoped<IProductRepository, ProductRepository>();
+        serviceCollection.AddScoped<ICategoryRepository, CategoryRepository>();
         serviceCollection.AddScoped<IUserRepository, UserRepository>();
         serviceCollection.AddScoped<IBusinessUserRepository, BusinessUserRepository>();
         serviceCollection.AddScoped<IUserEmployeeRepository, UserEmployeeRepository>();

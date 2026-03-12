@@ -7,6 +7,10 @@ public static class UserStatusCodes
    
         public static BaseException ProductNotFound = new ApiException(message: "Ürün bulunamadı!", statusCode: "PRODUCT_NOT_EXIST");
         public static BaseException ProductDeletedError = new ApiException(message: "Ürün silinirken hata oluştu!", statusCode: "PRODUCT_DELETED_ERROR");
+        public static BaseException CategoryNotFound = new ApiException(message: "Kategori bulunamadı!", statusCode: "CATEGORY_NOT_EXIST");
+        public static BaseException CategoryDeletedError = new ApiException(message: "Kategori silinirken hata oluştu!", statusCode: "CATEGORY_DELETED_ERROR");
+        public static BaseException CategoryAddedError = new ApiException(message: "Kategori eklerken hata oluştu!", statusCode: "CATEGORY_ADDED_ERROR");
+        public static BaseException CategoryUpdatedError = new ApiException(message: "Kategori güncellerken hata oluştu!", statusCode: "CATEGORY_UPDATED_ERROR");
         public static BaseException ProductAddedError = new ApiException(message: "Ürün eklerken hata oluştu!", statusCode: "PRODUCT_ADDED_ERROR");
         public static BaseException ProductUpdatedError = new ApiException(message: "Ürün güncellerken hata oluştu!", statusCode: "PRODUCT_UPDATED_ERROR");
 
